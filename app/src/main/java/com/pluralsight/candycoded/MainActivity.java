@@ -24,6 +24,9 @@ import com.pluralsight.candycoded.DB.CandyDbHelper;
 
 import cz.msebera.android.httpclient.Header;
 
+import static com.pluralsight.candycoded.DetailActivity.HASHTAG_CANDYCODED;
+import static com.pluralsight.candycoded.DetailActivity.SHARE_DESCRIPTION;
+
 
 public class MainActivity extends AppCompatActivity {
     private Candy[] candies;
@@ -73,11 +76,6 @@ public class MainActivity extends AppCompatActivity {
                         //adapter.changeCursor(cursor);
                     }
                 });
-    }
-
-    @Override
-    protected void onStart() {
-        super.onStart();
     }
 
 
